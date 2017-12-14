@@ -1,12 +1,30 @@
+.offer-area{
+    color:#413644 
+}
+
+.offer-area h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin:50px 0px;
+    text-transform: uppercase
+}
+    
 .offer-item{
     text-align: center;
-    margin-bottom: 10px;
-    height: 343px;
+    margin-bottom: 15px;
+  
 }
 .offer-item p.price , .offer-item span{
     font-weight: bold
 }
 
-.offer-item p:nth-child(2){
-    padding-top: 13px;
+}
+.text-price{
+    height: 70px;
+    
+}
+
+.text-price :nth-child(1) {
+    margin-bottom: 0px
+    
 }
