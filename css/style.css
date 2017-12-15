@@ -14,6 +14,11 @@
     margin-bottom: 15px;
   
 }
+
+.offer-item img{
+width: 100%;
+}
+
 .offer-item p.price , .offer-item span{
     font-weight: bold
 }
@@ -27,4 +32,79 @@
 .text-price :nth-child(1) {
     margin-bottom: 0px
     
+}
+
+.needs-call {
+    
+    margin-top: 180px;
+}
+.horse {
+    background-image: url('../img/layer3.jpg');
+    height: 672px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+.needs-call h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color:#413644;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 35px;
+}
+.phone{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color:#413644;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+}
+
+.needs-call p{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 60px;
+    color:#413644;
+    line-height: 30px;
+}
+.needs-call a{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 60px;
+    color:#413644;
+    line-height: 30px;
+text-decoration: underline;
+    
+}
+
+a:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #4b66fa; /* Цвет ссылки при наведении на нее курсора мыши */  
+    
+   }
+
+
+
+@media screen and (max-width: 768px) {
+   
+	.offer-item img{
+		width: 80%;
+	}
+	
+	.overlay {    z-index: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin: 20px;
+        padding: 20px;
+    }
+	.needs-call p {
+z-index:555;
+        
+}
 }
