@@ -15,12 +15,14 @@
 
 }
 
+/*
 .offer-item-wrapper {
 -webkit-box-shadow: 0 4px 18px rgba(0,0,0, .2);
     -moz-box-shadow: 0 4px 18px rgba(0,0,0, .2);
     box-shadow: 0 4px 18px rgba(0,0,0, .2); 
         padding: 10px;
 }
+*/
 .offer-item img {
     width: 100%;
 }
@@ -34,7 +36,8 @@
 
 
 .text-price {
-    min-height: 100px;
+    padding-top:8px;
+    min-height: 110px;
 
 }
 
@@ -103,6 +106,31 @@ a:hover {
     /* Цвет ссылки при наведении на нее курсора мыши */
 }
 
+.reviews p{
+    border: 3px solid #837188;
+    color: #413644;
+    font-size:14px;
+    padding: 20px 30px;
+    font-weight: 600;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+.button{
+     text-transform: uppercase;
+    font-size: 20px;
+    margin: 20px 0px 30px 0px;
+}
+
+
+
+@media screen and (max-width: 990px) {
+
+   .reviews p{
+        min-height: 350px;
+    }
+ 
+}
 
 
 @media screen and (max-width: 768px) {
@@ -122,20 +150,42 @@ a:hover {
         z-index: 555;
 
     }
+   .reviews p{
+        min-height: 200px;
+    }
+    
     /*параметры,придостижении размера экрана 768px;*/
 }
 
-.reviews p{
-    border: 3px solid #837188;
-    color: #413644;
-    font-size:14px;
-    padding: 20px 0px 30px 10px;
-    font-weight: 300;
-    font-weight: 600;
-}
 
-.button{
-     text-transform: uppercase;
-    font-size: 20px;
-    margin: 20px 0px 30px 0px;
+
+.btn-custom {
+  background-color: #a680b8;
+  border-color: #a680b8;
+    color: white;
+    width: 250px;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #9b70af;
+  border-color: #8f5fa6;
+    color: white;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #a680b8;
+  border-color: #a680b8;
+    color: white;
 }
