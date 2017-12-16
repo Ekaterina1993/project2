@@ -15,14 +15,6 @@
 
 }
 
-/*
-.offer-item-wrapper {
--webkit-box-shadow: 0 4px 18px rgba(0,0,0, .2);
-    -moz-box-shadow: 0 4px 18px rgba(0,0,0, .2);
-    box-shadow: 0 4px 18px rgba(0,0,0, .2); 
-        padding: 10px;
-}
-*/
 .offer-item img {
     width: 100%;
 }
@@ -30,13 +22,13 @@
 .offer-item p.price,
 .offer-item span {
     font-weight: bold;
-/*    font-style: italic;*/
+    /*    font-style: italic;*/
     font-size: 0.9em;
 }
 
 
 .text-price {
-    padding-top:8px;
+    padding-top: 8px;
     min-height: 110px;
 
 }
@@ -100,79 +92,43 @@
 }
 
 a:hover {
-    text-decoration: none;
-    /* Убираем подчеркивание */
-    color: #4b66fa;
-    /* Цвет ссылки при наведении на нее курсора мыши */
-}
+    color: #798bef;}
 
-.reviews p{
+.reviews p {
     border: 3px solid #837188;
     color: #413644;
-    font-size:14px;
+    font-size: 14px;
     padding: 20px 30px;
     font-weight: 600;
     overflow: hidden;
     min-height: 250px;
 }
 
-.button{
-     text-transform: uppercase;
+.button {
+    text-transform: uppercase;
     font-size: 20px;
     margin: 20px 0px 30px 0px;
 }
 
-
-
-@media screen and (max-width: 990px) {
-
-   .reviews p{
-        min-height: 350px;
-    }
- 
-}
-
-
-@media screen and (max-width: 768px) {
-
-    .offer-item img {
-        width: 80%;
-    }
-
-    .overlay {
-        z-index: 0;
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        margin: 20px;
-        padding: 20px;
-    }
-    .needs-call p {
-        z-index: 555;
-
-    }
-   .reviews p{
-        min-height: 200px;
-    }
-    
-    /*параметры,придостижении размера экрана 768px;*/
-}
-
-
-
 .btn-custom {
-  background-color: #a680b8;
-  border-color: #a680b8;
+    background-color: #837188;
+    border-color: #837188;
     color: white;
-    width: 250px;
+    width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0px;
 }
+
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom:active,
 .btn-custom.active {
-  background-color: #9b70af;
-  border-color: #8f5fa6;
+    background-color: #aa97af;
+    border-color: #aa97af;
     color: white;
 }
+
 .btn-custom.disabled:hover,
 .btn-custom.disabled:focus,
 .btn-custom.disabled:active,
@@ -185,7 +141,101 @@ fieldset[disabled] .btn-custom:hover,
 fieldset[disabled] .btn-custom:focus,
 fieldset[disabled] .btn-custom:active,
 fieldset[disabled] .btn-custom.active {
-  background-color: #a680b8;
-  border-color: #a680b8;
+    background-color: #724b7c;
+    border-color: #9980a0;
     color: white;
+}
+
+.map{
+    background-image: url('../img/layer5.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.address h1{
+    color: white;
+     font-size: 30px;
+    font-weight: bold;
+    margin:25px 0px 10px 0px;
+    text-transform: uppercase
+}
+.address p{
+     color: white;
+     font-size: 16px;
+}
+.footer{
+    background-color:#393439;
+}
+.footer p{
+    color: #faf2f2;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px;
+}
+.web{
+    color: #f7f8fa; 
+}
+
+.footer p.left {
+    float: left;
+}
+.footer p.right {
+    float: right;
+}
+
+
+
+
+
+
+@media screen and (max-width: 990px) {
+
+    .reviews p {
+        min-height: 350px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .offer-item img {
+        width: 80%;
+    }
+    .overlay {
+        z-index: 0;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+    }
+    .reviews p {
+        min-height: 200px;
+    }
+    .needs-call {
+        margin-top: 50px;
+    }
+    .needs-call h1 {
+        font-size: 20px;
+    }
+    .needs-call a {
+        font-size: 20px;
+    }
+    .needs-call p {
+        font-size: 20px;
+    }
+    .horse {
+        height: 500px;
+    }
+    .btn-custom {
+        width: 200px;
+        font-size: 16PX;
+    }
+    .footer p{
+    font-size: 10px;
+    }
+    
+     .footer p.left, .footer p.right {
+        float: none;
+        text-align: center;
+    }
+    /*параметры,придостижении размера экрана 768px;*/
 }
