@@ -8,6 +8,7 @@
     background-size: cover;
     height: 700px;
     
+    
 }
 .time{
     color: white;
@@ -277,9 +278,12 @@ a.numberup{
         float: none;
         text-align: center;
         width:100%;
-        padding:0px;
         margin: 0px;
+        line-height: 15px;
+        padding-top: 10px;
+    
     }
+    
     .bold{
         font-size: 17px;
     }
@@ -302,6 +306,9 @@ a.numberup{
     
     .text-price {
         min-height: 0px;
+        line-height: 15px;
+        margin-bottom: 10px;
+        
     }
     
     .offer-area h1{
