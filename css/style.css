@@ -1,3 +1,69 @@
+
+
+
+.horse1{
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    
+}
+.time{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    height: 60px;
+    background: rgba(73, 56, 87, 0.22)
+}
+
+.bold{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.name{
+    color: white;
+    margin-top: 300px;
+    background: rgba(73, 56, 87, 0.22);
+    
+    padding: 30px 10px;
+    
+}
+.name h2{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.name h1{
+    font-size: 95px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.name p{
+    font-size: 16px;
+    
+}
+
+.time p.left {
+    float: left;
+    padding-top: 13px;
+}
+.time p.right {
+    float: right;
+    padding-top: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .offer-area {
     color: #413644
 }
@@ -22,10 +88,8 @@
 .offer-item p.price,
 .offer-item span {
     font-weight: bold;
-    /*    font-style: italic;*/
     font-size: 0.9em;
 }
-
 
 .text-price {
     padding-top: 8px;
@@ -80,7 +144,7 @@
     line-height: 30px;
 }
 
-.needs-call a {
+.needs-call vk {
     font-size: 28px;
     font-weight: 500;
     text-align: center;
@@ -90,9 +154,14 @@
     text-decoration: underline;
 
 }
-
+a{
+    color:#413644; 
+}
 a:hover {
-    color: #798bef;}
+    color: #939ac3;}
+.vk{
+    font-size: 28px;
+}
 
 .reviews p {
     border: 3px solid #837188;
@@ -147,7 +216,7 @@ fieldset[disabled] .btn-custom.active {
 }
 
 .map{
-    background-image: url('../img/layer5.jpg');
+    background-image: url('../img/layer4.jpg');
     height: 500px;
     background-repeat: no-repeat;
     background-position: center;
@@ -167,6 +236,7 @@ fieldset[disabled] .btn-custom.active {
 }
 .footer{
     background-color:#393439;
+    max-width: auto
 }
 .footer p{
     color: #faf2f2;
@@ -185,8 +255,9 @@ fieldset[disabled] .btn-custom.active {
     float: right;
 }
 
-
-
+a.numberup{
+    color: white;
+}
 
 
 
@@ -197,8 +268,54 @@ fieldset[disabled] .btn-custom.active {
     }
 }
 @media screen and (max-width: 768px) {
+   
+    .horse1{
+        background-position: right;
+    }
+    .time p.left, .right{
+        font-size: 15px;
+        float: none;
+        text-align: center;
+        width:100%;
+        padding:0px;
+        margin: 0px;
+    }
+    .bold{
+        font-size: 17px;
+    }
+    .name{
+        margin-top: 150px;
+    }
+    
+    .name h1 {
+        font-size: 50px;
+    }
+    .name h2 {
+        font-size: 20px;
+    }
+    .name p {
+        font-size: 15px;
+    }
+    .horse1 {
+        height: 500px;
+    }
+    
+    .text-price {
+        min-height: 0px;
+    }
+    
+    .offer-area h1{
+        font-size:20px;
+        margin: 30px 0px;
+        
+    }
+    .address h1{
+        font-size:25px;
+        margin: 20px 0px;
+    }
     .offer-item img {
-        width: 80%;
+        width: 70%;
+       
     }
     .overlay {
         z-index: 0;
@@ -216,7 +333,7 @@ fieldset[disabled] .btn-custom.active {
     .needs-call h1 {
         font-size: 20px;
     }
-    .needs-call a {
+    a.vk {
         font-size: 20px;
     }
     .needs-call p {
@@ -238,4 +355,6 @@ fieldset[disabled] .btn-custom.active {
         text-align: center;
     }
     /*параметры,придостижении размера экрана 768px;*/
+    /*сделать марджины и размер текста для заголовков меньше для моб.версии*/
+    /*переделать в фш задний фон карты*/
 }
